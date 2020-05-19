@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+<<setup, include=FALSE, cache=FALSE>>=
+pacman::p_load(knitr, stringr, doBy, reshape2, xtable, tidyr, ggplot2, data.table, dplyr, pander,stringi,kableExtra)
+# set global chunk options
+opts_chunk$set(fig.path='figure/graphic-', fig.align='center', fig.pos='!ht', echo=FALSE, warning=FALSE,message=FALSE)
+@
+
+\vspace{-5cm}
+\title{\vspace{-4cm}Datenverlust - Songlyrics}
+\author{Patrick Zivkovic}
+
+\maketitle
+
+\section*{Nicht alle Alben berücksichtigt}
+
+Durch das Limit = 50 Parameter der Funktion des get-artist-albums haben wir nicht alle Alben extrahiert. Mit dem Offset Parameter haben wir das korrigieren können und etwa 2500 weitere Matches hervorbringen können, damit erhöht sich die Größe unseres Datensatzes von 34116 auf 36932. (ursprünglich 57650 Lieder - also arbeiten wir mit etwa 64\% des vollständigen Datensatzes)
+
+\section*{Matching: Stringdist = 2}
+
+<<>>=
+corr <- fread("stringdist_correction.csv")
+@
+
+Hat bei \Sexpr{dim(corr)[1]} Titeln eine Korrektur machen müssen. Meistens waren es bloß Fehler in der Zeichensetzung wie das folgende Beispiel zeigt \\
+
+<<>>=
+corr %>%
+  slice(1:5) -> corr_example
+kable(corr_example)
+@
+
+\section*{Probleme mit Anhängsel}
+
+Die meisten Lieder gingen uns verloren weil das Lied in Spotify nur mit einem Anhängsel wie etwa "Live", "Outtake", "Single" oder derartigem verfügbar war. \\
+Etwa kommt das Lied "Love Isn't Easy" von Abba in dieser Form in dem Original-Datensatz vor in Spotify jedoch nur folgendermaßen
+
+<<>>=
+#Wurde nicht herausgezogen, weil es ein Anhängsel gab
+all_tracks_spotify <- fread("all_tracks_from_spotify.csv")
+all_tracks_spotify %>%
+  filter(artist == "ABBA") %>%
+  select(name) %>%
+  pull(name) -> abba_songs
+abba_songs[str_detect(abba_songs,"Love Isn't Easy")][1]
+@
+
+Ein weiteres Beispiel zeigt das Lied von den Beatles "All I've Got To Do"
+
+<<>>=
+all_tracks_spotify %>%
+  filter(artist == "The Beatles")%>%
+  select(name) %>%
+  pull(name) -> beatles_songs
+beatles_songs[str_detect(beatles_songs, "All I've Got To Do")]
+@
+
+\section*{Verfügbarkeit}
+
+Die restlichen Lieder wurden nicht gematcht, weil sie tatsächlich nicht in der Spotify Datenbank verfügbar sind.
+Zum Beispiel einige Lieder von ABBA ("Burning My Bridges" oder "Dream World")
+
+
+\end{document}
