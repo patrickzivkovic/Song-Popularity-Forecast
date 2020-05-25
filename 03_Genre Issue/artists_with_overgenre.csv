@@ -1,10 +1,10 @@
 artist,overgenres
 'n Sync,pop
+'n Sync,Various
 ABBA,pop
 Ace Of Base,electronic
 Ace Of Base,pop
-Ace Of Base,house
-Ace Of Base,hip hop
+Ace Of Base,hip-hop
 Ace Of Base,rock
 Adam Sandler,comedy
 Adele,pop
@@ -12,6 +12,8 @@ Adele,r&b and soul
 Aerosmith,rock
 Air Supply,pop
 Air Supply,rock
+Air Supply,Various
+Aiza Seguerra,Various
 Alabama,country
 Alan Parsons Project,rock
 Alan Parsons Project,pop
@@ -19,15 +21,19 @@ Aled Jones,pop
 Alice Cooper,blues
 Alice Cooper,heavy metal
 Alice Cooper,rock
+Alice Cooper,comedy
+Alice Cooper,Various
 Alice In Chains,heavy metal
 Alice In Chains,rock
 Alison Krauss,country
 Alison Krauss,folk
+Alison Krauss,Various
 Allman Brothers Band,blues
 Allman Brothers Band,country
 Allman Brothers Band,folk
 Allman Brothers Band,rock
 Allman Brothers Band,pop
+Allman Brothers Band,Various
 Alphaville,pop
 Alphaville,rock
 Alphaville,electronic
@@ -35,48 +41,60 @@ America,rock
 America,country
 America,folk
 America,pop
+Amy Grant,Various
 Amy Grant,rock
 Amy Grant,christian
 Andrea Bocelli,pop
+Andrea Bocelli,Various
 Andy Williams,easy listening
+Andy Williams,Various
 Andy Williams,pop
 Andy Williams,rock
 Ariana Grande,pop
 Ariel Rivera,pop
 Ariel Rivera,rock
+Ariel Rivera,Various
 Arlo Guthrie,country
 Arlo Guthrie,folk
 Arlo Guthrie,rock
 Arrogant Worms,comedy
 Arrogant Worms,indie
 Avril Lavigne,pop
+Avril Lavigne,rock
 Backstreet Boys,pop
+Backstreet Boys,Various
 Barbra Streisand,pop
 Barbra Streisand,rock
+Barbra Streisand,Various
 Beach Boys,pop
 Beach Boys,folk
 Beach Boys,rock
 Beautiful South,pop
 Beautiful South,rock
+Beautiful South,Various
 Bee Gees,electronic
 Bee Gees,r&b and soul
 Bee Gees,pop
 Bee Gees,rock
+Bee Gees,Various
 Bette Midler,pop
 Bette Midler,rock
+Bette Midler,Various
 Bill Withers,r&b and soul
-Bill Withers,r&b/soul
 Billie Holiday,jazz
 Billie Holiday,r&b and soul
+Billie Holiday,Various
 Billie Holiday,easy listening
 Billy Joel,folk
 Billy Joel,rock
 Billy Joel,pop
 Bing Crosby,easy listening
+Bing Crosby,Various
 Black Sabbath,rock
 Black Sabbath,heavy metal
 Blur,rock
 Blur,pop
+Blur,Various
 Blur,electronic
 Bob Dylan,country
 Bob Dylan,folk
@@ -98,16 +116,17 @@ Bonnie Raitt,blues
 Bonnie Raitt,folk
 Bonnie Raitt,rock
 Bonnie Raitt,pop
-Bosson,rock
-Bosson,country
+Bonnie Raitt,Various
 Bosson,pop
 Bread,country
 Bread,folk
 Bread,rock
 Bread,pop
+Bread,Various
 Britney Spears,pop
 Bruce Springsteen,rock
 Bruce Springsteen,folk
+Bruce Springsteen,Various
 Bruno Mars,pop
 Bryan White,country
 Cake,rock
@@ -116,8 +135,12 @@ Carly Simon,country
 Carly Simon,folk
 Carly Simon,rock
 Carly Simon,pop
+Carly Simon,Various
+Carol Banawa,Various
+Carpenters,folk
 Carpenters,pop
 Carpenters,rock
+Carpenters,Various
 Cat Stevens,folk
 Cat Stevens,rock
 Cat Stevens,pop
@@ -125,17 +148,20 @@ Celine Dion,pop
 Chaka Khan,electronic
 Chaka Khan,r&b and soul
 Chaka Khan,pop
-Chaka Khan,r&b/soul
+Chaka Khan,Various
 Cheap Trick,rock
 Cheap Trick,heavy metal
 Cheap Trick,pop
+Cheap Trick,Various
 Cher,pop
+Cher,Various
 Chicago,folk
 Chicago,rock
 Chicago,pop
+Chicago,Various
 Chris Brown,pop
 Chris Brown,r&b and soul
-Chris Brown,hip hop
+Chris Brown,hip-hop
 Chris Rea,rock
 Chris Rea,blues
 Chris Rea,pop
@@ -144,55 +170,69 @@ Christina Perri,pop
 Christina Perri,rock
 Christy Moore,folk
 Chuck Berry,blues
-Chuck Berry,folk
 Chuck Berry,rock
 Chuck Berry,country
 Chuck Berry,r&b and soul
 Cinderella,heavy metal
 Cinderella,rock
 Clash,rock
+Clash,Various
 Clash,punk rock
 Cliff Richard,pop
-Cliff Richard,country
 Cliff Richard,rock
+Cliff Richard,Various
 Coldplay,pop
+Coldplay,Various
+Cole Porter,Various
 Conway Twitty,country
 Counting Crows,rock
 Creedence Clearwater Revival,country
 Creedence Clearwater Revival,rock
 Crowded House,rock
+Crowded House,Various
 Culture Club,electronic
 Culture Club,r&b and soul
 Culture Club,pop
 Culture Club,rock
 Cyndi Lauper,pop
 Cyndi Lauper,rock
-Dan Fogelberg,pop
+Cyndi Lauper,Various
 Dan Fogelberg,country
 Dan Fogelberg,folk
 Dan Fogelberg,rock
+Dan Fogelberg,pop
+Dan Fogelberg,Various
 Dave Matthews Band,rock
+Dave Matthews Band,Various
 David Allan Coe,country
 David Bowie,rock
+David Bowie,Various
 David Guetta,pop
-David Guetta,house
+David Guetta,Various
 David Pomeranz,pop
 David Pomeranz,rock
+David Pomeranz,Various
 Dean Martin,easy listening
 Dean Martin,jazz
+Dean Martin,Various
+Death,pop
+Death,rock
+Death,indie
 Deep Purple,blues
 Deep Purple,rock
 Deep Purple,heavy metal
-Def Leppard,heavy metal
 Def Leppard,rock
+Def Leppard,Various
 Demi Lovato,pop
 Depeche Mode,pop
 Depeche Mode,rock
 Depeche Mode,electronic
+Depeche Mode,Various
 Devo,rock
 Devo,punk rock
 Devo,pop
 Devo,electronic
+Devo,Various
 Dewa 19,indie
 Dewa 19,pop
 Dewa 19,rock
@@ -200,7 +240,7 @@ Diana Ross,electronic
 Diana Ross,r&b and soul
 Diana Ross,pop
 Diana Ross,rock
-Diana Ross,r&b/soul
+Diana Ross,Various
 Dire Straits,blues
 Dire Straits,rock
 Dire Straits,pop
@@ -213,11 +253,12 @@ Don Henley,pop
 Don McLean,folk
 Don McLean,rock
 Don McLean,pop
+Don McLean,Various
 Don Moen,christian
+Don Moen,Various
 Donna Summer,electronic
 Donna Summer,r&b and soul
 Donna Summer,pop
-Donna Summer,r&b/soul
 Doobie Brothers,rock
 Doobie Brothers,blues
 Doobie Brothers,country
@@ -226,58 +267,70 @@ Doobie Brothers,pop
 Doors,rock
 Doris Day,easy listening
 Doris Day,jazz
+Doris Day,Various
 Doris Day,pop
-Drake,hip hop
+Drake,hip-hop
 Drake,pop
 Dream Theater,heavy metal
 Dream Theater,rock
-Dusty Springfield,pop
 Dusty Springfield,folk
 Dusty Springfield,rock
 Dusty Springfield,r&b and soul
 Dusty Springfield,jazz
-Dusty Springfield,rockabilly
+Dusty Springfield,Various
+Dusty Springfield,pop
 Dusty Springfield,easy listening
-Dusty Springfield,r&b/soul
 Eagles,country
 Eagles,folk
 Eagles,rock
 Eagles,pop
 Ed Sheeran,pop
 Eddie Cochran,country
+Eddie Cochran,Various
 Eddie Cochran,pop
 Eddie Cochran,rock
 Electric Light Orchestra,rock
 Electric Light Orchestra,folk
 Electric Light Orchestra,pop
+Electric Light Orchestra,Various
 Ella Fitzgerald,jazz
+Ella Fitzgerald,Various
+Ellie Goulding,electronic
 Ellie Goulding,pop
-Ellie Goulding,house
+Ellie Goulding,Various
 Elton John,rock
 Elton John,pop
 Elvis Costello,rock
 Elvis Costello,folk
 Elvis Costello,pop
+Elvis Costello,Various
 Elvis Presley,country
+Elvis Presley,Various
 Elvis Presley,rock
-Eminem,hip hop
+Eminem,hip-hop
+Eminem,Various
 Emmylou Harris,country
 Emmylou Harris,folk
 Emmylou Harris,rock
+Emmylou Harris,Various
 Engelbert Humperdinck,easy listening
+Engelbert Humperdinck,Various
 Engelbert Humperdinck,pop
-Enrique Iglesias,latin
+Enrique Iglesias,world
 Enrique Iglesias,pop
 Enya,folk
+Enya,Various
 Erasure,pop
 Erasure,rock
 Erasure,electronic
 Eric Clapton,blues
 Eric Clapton,rock
 Eric Clapton,pop
+Erik Santos,Various
 Etta James,jazz
 Etta James,r&b and soul
 Etta James,blues
+Etta James,Various
 Europe,heavy metal
 Europe,rock
 Eurythmics,electronic
@@ -288,13 +341,15 @@ Evanescence,heavy metal
 Evanescence,rock
 Everclear,heavy metal
 Everclear,rock
+Everclear,Various
 Everlast,rock
 Extreme,heavy metal
 Extreme,rock
-Fabolous,hip hop
+Fabolous,hip-hop
 Fabolous,electronic
 Fabolous,pop
 Fabolous,r&b and soul
+Fabolous,Various
 Face To Face,punk rock
 Face To Face,caribbean and caribbean-influenced
 Faces,rock
@@ -302,85 +357,106 @@ Faces,blues
 Faces,country
 Faces,folk
 Faces,pop
+Faces,Various
 Faith Hill,country
 Faith Hill,rock
 Faith No More,heavy metal
 Faith No More,rock
 Falco,pop
 Falco,rock
+Falco,Various
 Fall Out Boy,punk rock
 Fall Out Boy,pop
 Fall Out Boy,rock
 Fastball,rock
 Fatboy Slim,electronic
+Fatboy Slim,Various
 Fifth Harmony,pop
+Fifth Harmony,Various
 Fiona Apple,pop
 Fiona Apple,rock
 Fiona Apple,folk
+Fiona Apple,Various
 Fleetwood Mac,rock
 Fleetwood Mac,pop
 Flo-Rida,pop
-Flo-Rida,hip hop
+Flo-Rida,Various
+Flo-Rida,hip-hop
 Foo Fighters,heavy metal
 Foo Fighters,rock
+Foo Fighters,Various
 Foreigner,rock
 Foreigner,pop
 Frank Sinatra,easy listening
+Frank Sinatra,Various
 Frank Zappa,rock
 Frank Zappa,avant-garde
 Frank Zappa,jazz
+Frank Zappa,Various
 Frankie Goes To Hollywood,rock
 Frankie Goes To Hollywood,electronic
 Frankie Goes To Hollywood,pop
 Frankie Laine,easy listening
+Frankie Laine,Various
 Frankie Laine,pop
 Frankie Laine,rock
 Frankie Valli,pop
 Frankie Valli,folk
 Frankie Valli,rock
 Frankie Valli,r&b and soul
-Frankie Valli,vocal
-Frankie Valli,r&b/soul
+Frankie Valli,Various
+Frankie Valli,easy listening
+Freddie Aguilar,world
+Freddie Aguilar,Various
 Freddie King,blues
 Freddie King,rock
+Freddie King,Various
+Freestyle,Various
 Freestyle,rock
 Fun.,pop
 Fun.,rock
+Fun.,Various
 Garth Brooks,country
 Gary Numan,rock
 Gary Numan,electronic
 Gary Numan,pop
+Gary Numan,Various
+Gary Valenciano,Various
 Genesis,rock
 Genesis,pop
 George Formby,comedy
+George Formby,Various
 George Harrison,folk
 George Harrison,rock
 George Harrison,pop
+George Harrison,Various
 George Jones,country
 George Michael,pop
 George Michael,rock
 George Strait,country
 Gino Vannelli,pop
 Gino Vannelli,rock
-Gipsy Kings,flamenco
-Gipsy Kings,caribbean and caribbean-influenced
+Gino Vannelli,Various
 Gipsy Kings,world
+Gipsy Kings,caribbean and caribbean-influenced
+Glee,Various
+Glee,pop
 Glen Campbell,pop
 Glen Campbell,folk
 Glen Campbell,rock
 Glen Campbell,country
+Glen Campbell,Various
 Glen Campbell,easy listening
-Gloria Estefan,latin
+Gloria Estefan,world
 Gloria Estefan,pop
 Gloria Estefan,rock
 Gloria Gaynor,electronic
 Gloria Gaynor,r&b and soul
-GMB,country
-GMB,pop
 Gordon Lightfoot,country
 Gordon Lightfoot,folk
 Gordon Lightfoot,rock
 Gordon Lightfoot,pop
+Gordon Lightfoot,Various
 Grand Funk Railroad,rock
 Grand Funk Railroad,blues
 Grand Funk Railroad,country
@@ -389,11 +465,14 @@ Grand Funk Railroad,pop
 Grateful Dead,country
 Grateful Dead,folk
 Grateful Dead,rock
+Grateful Dead,Various
+Great Big Sea,Various
 Great Big Sea,indie
 Great Big Sea,rock
 Great Big Sea,folk
+Green Day,Various
 Green Day,punk rock
-Gucci Mane,hip hop
+Gucci Mane,hip-hop
 Gucci Mane,electronic
 Gucci Mane,pop
 Guided By Voices,rock
@@ -401,39 +480,46 @@ Guided By Voices,folk
 Guided By Voices,pop
 Guided By Voices,avant-garde
 Guided By Voices,punk rock
+Guided By Voices,Various
 Guided By Voices,indie
 Guns N' Roses,heavy metal
 Guns N' Roses,rock
 Hank Snow,country
+Hank Snow,Various
 Hank Williams,country
 Hank Williams Jr.,country
 Hanson,rock
+Hanson,Various
 Hanson,pop
 Happy Mondays,electronic
 Happy Mondays,pop
 Happy Mondays,rock
 Harry Belafonte,caribbean and caribbean-influenced
+Harry Belafonte,Various
 Harry Belafonte,pop
 Harry Belafonte,easy listening
 "Harry Connick, Jr.",jazz
+"Harry Connick, Jr.",Various
 "Harry Connick, Jr.",easy listening
 Heart,rock
 Heart,pop
 Helloween,rock
 Helloween,heavy metal
+Helloween,Various
 High School Musical,pop
 Hillsong,rock
 Hillsong,christian
-Hillsong,inspirational – christian & gospel
+Hillsong,Various
 Hillsong United,rock
 Hillsong United,christian
-Hillsong United,inspirational – christian & gospel
+Hillsong United,Various
 HIM,heavy metal
+HIM,rock
 Hollies,pop
 Hollies,country
 Hollies,folk
 Hollies,rock
-Hollies,rockabilly
+Hollies,Various
 Hooverphonic,electronic
 Housemartins,pop
 Housemartins,rock
@@ -443,22 +529,29 @@ Howard Jones,electronic
 Human League,rock
 Human League,pop
 Human League,electronic
+Human League,Various
 Ian Hunter,rock
 Ian Hunter,pop
-Ice Cube,hip hop
+Ice Cube,hip-hop
+Ice Cube,Various
+Idina Menzel,Various
 Iggy Pop,rock
+Iggy Pop,Various
 Iggy Pop,punk rock
 Il Divo,pop
 Imagine Dragons,rock
 Imperials,christian
 Imperials,rock
+Incognito,Various
 Incubus,heavy metal
 Incubus,rock
+Indiana Bible College,Various
 Indigo Girls,folk
 Indigo Girls,rock
+Indigo Girls,Various
 Ingrid Michaelson,pop
 Ingrid Michaelson,rock
-Ingrid Michaelson,indie
+Ingrid Michaelson,Various
 Inna,pop
 Insane Clown Posse,rock
 Insane Clown Posse,comedy
@@ -469,11 +562,14 @@ Iron Butterfly,blues
 Iron Butterfly,folk
 Iron Maiden,rock
 Iron Maiden,heavy metal
+Iron Maiden,Various
+Irving Berlin,Various
 Isley Brothers,electronic
 Isley Brothers,r&b and soul
-Isley Brothers,r&b/soul
-Israel Houghton,inspirational – christian & gospel
-J Cole,hip hop
+Israel Houghton,Various
+Israel Houghton,christian
+J Cole,hip-hop
+J Cole,pop
 Jackson Browne,country
 Jackson Browne,folk
 Jackson Browne,rock
@@ -481,11 +577,13 @@ Jackson Browne,pop
 James Taylor,folk
 James Taylor,rock
 James Taylor,pop
+James Taylor,Various
 Janis Joplin,blues
 Janis Joplin,rock
 Jason Mraz,pop
 Jason Mraz,rock
 Jennifer Lopez,pop
+Jennifer Lopez,Various
 Jim Croce,country
 Jim Croce,folk
 Jim Croce,rock
@@ -499,12 +597,15 @@ Jimmy Buffett,pop
 John Denver,folk
 John Denver,rock
 John Denver,pop
+John Denver,Various
 John Legend,r&b and soul
 John Legend,pop
 John Legend,rock
+John Legend,Various
 John Martyn,folk
 John Martyn,rock
 John Martyn,pop
+John McDermott,Various
 John McDermott,folk
 John Mellencamp,country
 John Mellencamp,folk
@@ -513,13 +614,19 @@ John Mellencamp,pop
 John Prine,country
 John Prine,folk
 John Prine,rock
+John Prine,Various
 John Waite,pop
 John Waite,rock
 Johnny Cash,country
 Joni Mitchell,folk
 Joni Mitchell,rock
-Jose Mari Chan,southeast asian
+Joni Mitchell,Various
+Jose Mari Chan,world
+Jose Mari Chan,pop
+Jose Mari Chan,rock
+Jose Mari Chan,Various
 Josh Groban,pop
+Josh Groban,Various
 Journey,rock
 Journey,pop
 Joy Division,rock
@@ -529,44 +636,50 @@ Judas Priest,heavy metal
 Judas Priest,rock
 Judds,country
 Judy Garland,jazz
+Judy Garland,Various
 Judy Garland,easy listening
 Justin Bieber,pop
 Justin Timberlake,pop
-Kanye West,hip hop
+Kanye West,hip-hop
+Kari Jobe,Various
 Kari Jobe,rock
 Kari Jobe,christian
-Kari Jobe,inspirational – christian & gospel
 Kate Bush,rock
 Kate Bush,pop
 Kate Bush,folk
+Kate Bush,Various
 Katy Perry,pop
 Keith Green,rock
 Keith Green,christian
+Keith Green,Various
 Keith Urban,country
 Keith Urban,pop
 Kelly Clarkson,pop
 Kelly Clarkson,rock
+Kelly Clarkson,Various
 Kenny Chesney,country
 Kenny Loggins,pop
 Kenny Loggins,rock
 Kenny Rogers,country
 Kenny Rogers,pop
 Kenny Rogers,rock
+Kenny Rogers,Various
 Kid Rock,heavy metal
 Kid Rock,rock
 Kim Wilde,pop
 Kim Wilde,rock
 King Crimson,rock
 King Crimson,jazz
+King Crimson,Various
 King Diamond,heavy metal
 King Diamond,rock
 Kinks,rock
 Kinks,folk
-Kinks,rockabilly
+Kinks,Various
 Kirk Franklin,r&b and soul
-Kirk Franklin,inspirational – christian & gospel
-Kirsty Maccoll,pop
+Kirk Franklin,christian
 Kirsty Maccoll,rock
+Kirsty Maccoll,pop
 Kiss,rock
 Kiss,heavy metal
 Korn,heavy metal
@@ -578,58 +691,74 @@ Kyla,electronic
 Kylie Minogue,electronic
 Kylie Minogue,pop
 Kylie Minogue,rock
+Kylie Minogue,Various
 Lady Gaga,pop
 Lana Del Rey,pop
-Lauryn Hill,hip hop
+Lauryn Hill,hip-hop
 Lauryn Hill,r&b and soul
 Lauryn Hill,pop
+Lauryn Hill,Various
+Lea Salonga,Various
 Leann Rimes,country
 Leann Rimes,rock
 Leann Rimes,pop
 Lenny Kravitz,rock
+Lenny Kravitz,Various
 Leo Sayer,pop
 Leo Sayer,electronic
 Leo Sayer,r&b and soul
 Leo Sayer,folk
 Leo Sayer,rock
+Leo Sayer,Various
 Leonard Cohen,folk
 Leonard Cohen,rock
-Lil Wayne,hip hop
+Leonard Cohen,Various
+Les Miserables,Various
+Lil Wayne,hip-hop
 Lil Wayne,electronic
 Lil Wayne,pop
 Linda Ronstadt,country
 Linda Ronstadt,folk
 Linda Ronstadt,rock
 Linda Ronstadt,pop
+Linda Ronstadt,Various
 Linkin Park,heavy metal
 Linkin Park,rock
 Lionel Richie,electronic
 Lionel Richie,r&b and soul
 Lionel Richie,pop
 Lionel Richie,rock
-Lionel Richie,r&b/soul
+Lionel Richie,Various
 Little Mix,pop
+Little Mix,Various
 Little Walter,blues
-LL Cool J,hip hop
-LL Cool J,r&b and soul
+Little Walter,rock
+Little Walter,Various
+LL Cool J,hip-hop
 LL Cool J,pop
+LL Cool J,r&b and soul
+LL Cool J,Various
 Lloyd Cole,rock
 Lloyd Cole,pop
+Lloyd Cole,Various
 Lorde,electronic
 Lorde,pop
+Lorde,Various
 Loretta Lynn,country
 Loretta Lynn,folk
 Lou Reed,rock
 Lou Reed,folk
+Lou Reed,Various
 Louis Armstrong,jazz
+Louis Armstrong,r&b and soul
+Louis Armstrong,Various
 Louis Jordan,blues
 Louis Jordan,r&b and soul
 Louis Jordan,jazz
-Louis Jordan,rock
 Lucky Dube,caribbean and caribbean-influenced
 Luther Vandross,r&b and soul
-Luther Vandross,hip hop
-Luther Vandross,r&b/soul
+Luther Vandross,hip-hop
+Luther Vandross,Various
 Lynyrd Skynyrd,blues
 Lynyrd Skynyrd,country
 Lynyrd Skynyrd,rock
@@ -638,46 +767,55 @@ Manowar,rock
 Manowar,heavy metal
 Mariah Carey,pop
 Mariah Carey,r&b and soul
+Mariah Carey,Various
 Marianne Faithfull,folk
 Marianne Faithfull,rock
-Marianne Faithfull,rockabilly
+Marianne Faithfull,Various
 Marillion,rock
 Marillion,pop
+Marillion,Various
 Marilyn Manson,heavy metal
 Marilyn Manson,electronic
 Marilyn Manson,rock
+Marilyn Manson,Various
 Mark Ronson,pop
 Maroon 5,pop
 Maroon 5,rock
 Mary Black,folk
 Matt Monro,easy listening
+Matt Monro,Various
 Matt Monro,pop
+Matt Redman,Various
 Matt Redman,rock
 Matt Redman,christian
-Matt Redman,inspirational – christian & gospel
 Mazzy Star,rock
-Mc Hammer,hip hop
+Mazzy Star,Various
+Mc Hammer,hip-hop
 Mc Hammer,electronic
-Mc Hammer,house
 Mc Hammer,r&b and soul
+Mc Hammer,Various
 Meat Loaf,rock
 Meat Loaf,pop
 Megadeth,heavy metal
 Megadeth,rock
+Megadeth,Various
 Men At Work,pop
 Men At Work,rock
-Metallica,rock
 Metallica,heavy metal
+Metallica,rock
+Metallica,Various
 Michael Bolton,pop
 Michael Bolton,rock
+Michael Bolton,Various
+Michael Buble,Various
 Michael Buble,pop
 Michael Buble,easy listening
 Michael Jackson,pop
 Michael Jackson,r&b and soul
+Michael W. Smith,Various
 Michael W. Smith,rock
 Michael W. Smith,christian
-Michael W. Smith,inspirational – christian & gospel
-Migos,hip hop
+Migos,hip-hop
 Migos,electronic
 Migos,pop
 Miley Cyrus,pop
@@ -688,56 +826,69 @@ Moody Blues,rock
 Moody Blues,country
 Moody Blues,folk
 Moody Blues,pop
-Moody Blues,rockabilly
 Morrissey,rock
 Morrissey,pop
+Morrissey,Various
 Morrissey,electronic
 Nat King Cole,jazz
+Nat King Cole,Various
 Nat King Cole,easy listening
 Natalie Cole,pop
 Natalie Cole,rock
 Natalie Cole,r&b and soul
 Natalie Cole,jazz
+Natalie Cole,Various
 Natalie Cole,easy listening
-Natalie Cole,r&b/soul
+Natalie Grant,Various
 Natalie Grant,rock
 Natalie Grant,christian
-Natalie Grant,inspirational – christian & gospel
 Natalie Imbruglia,pop
 Natalie Imbruglia,rock
+Natalie Imbruglia,Various
 Nazareth,blues
-Nazareth,rock
 Nazareth,heavy metal
+Nazareth,rock
 Ne-Yo,pop
 Ne-Yo,r&b and soul
+Ne-Yo,Various
 Neil Diamond,folk
 Neil Diamond,rock
 Neil Diamond,pop
+Neil Diamond,Various
 Neil Sedaka,pop
 Neil Sedaka,folk
 Neil Sedaka,rock
 Neil Sedaka,country
+Neil Sedaka,Various
 Neil Sedaka,easy listening
 Neil Young,rock
 Neil Young,folk
+Neil Young,Various
 New Order,rock
 New Order,pop
 New Order,electronic
+New Order,Various
 New Order,punk rock
+Nick Cave,rock
+Nick Cave,Various
 Nick Drake,folk
 Nick Drake,rock
 Nick Drake,pop
+Nick Drake,Various
 Nickelback,heavy metal
 Nickelback,rock
-Nicki Minaj,hip hop
+Nicki Minaj,hip-hop
 Nicki Minaj,pop
 Nightwish,heavy metal
 Nina Simone,jazz
 Nina Simone,r&b and soul
+Nina Simone,Various
 Nine Inch Nails,heavy metal
 Nine Inch Nails,rock
 Nine Inch Nails,electronic
+Nine Inch Nails,Various
 Nirvana,rock
+Nirvana,Various
 Nitty Gritty Dirt Band,country
 Nitty Gritty Dirt Band,folk
 Nitty Gritty Dirt Band,rock
@@ -745,55 +896,70 @@ Nitty Gritty Dirt Band,pop
 NOFX,punk rock
 NOFX,pop
 Norah Jones,jazz
+Norah Jones,Various
 Norah Jones,rock
-Notorious B.I.G.,hip hop
+Notorious B.I.G.,hip-hop
+O-Zone,electronic
+O-Zone,pop
 O.A.R.,rock
-O.A.R.,pop
+O.A.R.,Various
 Oasis,pop
 Oasis,rock
+Oasis,Various
 Oasis,electronic
 Ocean Colour Scene,pop
 Ocean Colour Scene,rock
+Ocean Colour Scene,Various
 Ocean Colour Scene,electronic
 Offspring,heavy metal
 Offspring,rock
 Offspring,punk rock
+Offspring,Various
 Offspring,pop
 Ofra Haza,pop
+Ofra Haza,Various
 Ofra Haza,world
 Oingo Boingo,pop
 Oingo Boingo,rock
 Oingo Boingo,electronic
-Oingo Boingo,comedy
+Oingo Boingo,Various
 Old 97's,country
 Old 97's,rock
 Old 97's,folk
 Old 97's,indie
+Old 97's,Various
 Olivia Newton-John,pop
 Olivia Newton-John,electronic
 Olivia Newton-John,r&b and soul
 Olivia Newton-John,rock
+Olivia Newton-John,Various
 Olly Murs,pop
 Olly Murs,rock
+Olly Murs,Various
 Omd,pop
 Omd,rock
 Omd,electronic
+Omd,Various
 One Direction,pop
+One Direction,Various
 OneRepublic,pop
 OneRepublic,rock
 Opeth,heavy metal
 Opeth,rock
 Orphaned Land,heavy metal
+Oscar Hammerstein,Various
 Otis Redding,r&b and soul
 Otis Redding,blues
 Our Lady Peace,heavy metal
 Our Lady Peace,rock
+Our Lady Peace,Various
 Out Of Eden,r&b and soul
-Outkast,hip hop
+Outkast,hip-hop
 Outkast,pop
 Overkill,heavy metal
 Overkill,punk rock
 Overkill,rock
+Overkill,Various
 Owl City,pop
 Owl City,rock
 Ozzy Osbourne,rock
@@ -804,26 +970,34 @@ Passenger,rock
 Pat Benatar,rock
 Pat Benatar,pop
 Patsy Cline,country
+Patsy Cline,Various
 Patti Smith,punk rock
 Patti Smith,rock
 Patti Smith,folk
-Patti Smith,pop
+Patti Smith,Various
 Paul McCartney,rock
 Paul McCartney,folk
 Paul McCartney,pop
+Paul McCartney,Various
 Paul Simon,folk
 Paul Simon,rock
 Paul Simon,pop
+Paul Simon,Various
 Pearl Jam,rock
+Pearl Jam,Various
 Perry Como,easy listening
+Perry Como,Various
 Perry Como,pop
 Pet Shop Boys,pop
 Pet Shop Boys,rock
 Pet Shop Boys,electronic
+Pet Shop Boys,Various
 Peter Cetera,pop
 Peter Cetera,rock
+Peter Cetera,Various
 Peter Gabriel,rock
 Peter Gabriel,pop
+Peter Gabriel,Various
 Peter Tosh,caribbean and caribbean-influenced
 Peter Tosh,electronic
 Pharrell Williams,pop
@@ -831,59 +1005,63 @@ Phil Collins,pop
 Phil Collins,rock
 Phish,blues
 Phish,rock
+Phish,Various
 Pink Floyd,rock
-Pitbull,latin
+Pitbull,world
 Pitbull,pop
-Pitbull,hip hop
+Pitbull,hip-hop
 Planetshakers,rock
 Planetshakers,christian
-Planetshakers,inspirational – christian & gospel
+Planetshakers,Various
 Pogues,folk
 Pogues,punk rock
 Pogues,rock
 Point Of Grace,rock
 Point Of Grace,christian
-Point Of Grace,inspirational – christian & gospel
+Point Of Grace,Various
 Poison,heavy metal
 Poison,rock
 Pretenders,rock
 Pretenders,folk
 Pretenders,pop
+Pretenders,Various
 Primus,heavy metal
 Primus,rock
 Primus,comedy
 Prince,r&b and soul
 Prince,rock
-Prince,r&b/soul
+Prince,Various
 Proclaimers,rock
 Proclaimers,pop
 Procol Harum,rock
 Procol Harum,blues
 Procol Harum,folk
-Procol Harum,pop
-Procol Harum,rockabilly
-Puff Daddy,hip hop
+Puff Daddy,hip-hop
 Puff Daddy,pop
 Puff Daddy,r&b and soul
-Q-Tip,hip hop
+Q-Tip,hip-hop
 Q-Tip,r&b and soul
 Qntal,electronic
 Qntal,folk
+Qntal,Various
+Qntal,alternative
 Quarashi,rock
-Quarashi,hip hop
+Quarashi,hip-hop
 Quarterflash,pop
 Quarterflash,rock
 Queen,rock
-Queen Latifah,hip hop
+Queen Latifah,hip-hop
 Queens Of The Stone Age,heavy metal
 Queens Of The Stone Age,rock
 Queens Of The Stone Age,blues
+Queens Of The Stone Age,Various
 Queensryche,heavy metal
 Queensryche,rock
 Quicksand,heavy metal
 Quicksand,punk rock
 Quicksand,rock
 Quicksand,electronic
+Quicksand,Various
 Quicksilver Messenger Service,rock
 Quicksilver Messenger Service,blues
 Quicksilver Messenger Service,country
@@ -893,32 +1071,41 @@ Quiet Riot,rock
 Quietdrive,pop
 Quietdrive,punk rock
 Quietdrive,rock
+Quietdrive,Various
 Quincy Jones,electronic
 Quincy Jones,r&b and soul
-Quincy Jones,r&b/soul
+Quincy Jones,Various
 Radiohead,rock
+Radiohead,Various
 Radiohead,indie
+Raffi,Various
 Raffi,folk
 Rage Against The Machine,heavy metal
 Rage Against The Machine,rock
-Rage Against The Machine,hip hop
+Rage Against The Machine,hip-hop
 Rammstein,heavy metal
 Rammstein,electronic
 Rammstein,rock
+Rammstein,Various
 Ramones,rock
 Ramones,punk rock
+Ramones,Various
 Randy Travis,country
 Rascal Flatts,country
+Rascal Flatts,rock
 Ray Boltz,christian
 Ray Charles,jazz
 Ray Charles,r&b and soul
 Ray Charles,blues
+Ray Charles,Various
 Reba Mcentire,country
 Red Hot Chili Peppers,rock
 Red Hot Chili Peppers,heavy metal
-Regine Velasquez,southeast asian
+Red Hot Chili Peppers,Various
+Regine Velasquez,world
+Regine Velasquez,Various
 Regine Velasquez,rock
-Rem,hip hop
+Rem,hip-hop
 Rem,r&b and soul
 Reo Speedwagon,country
 Reo Speedwagon,folk
@@ -930,19 +1117,22 @@ Rick Astley,pop
 Rick Astley,rock
 Rihanna,pop
 Rihanna,r&b and soul
+Rihanna,Various
 Robbie Williams,pop
 Rod Stewart,pop
 Rod Stewart,rock
+Rod Stewart,Various
 Rolling Stones,rock
-Rolling Stones,rockabilly
+Rolling Stones,Various
 Roxette,pop
-Roxette,rock
 Roxy Music,rock
 Roxy Music,pop
+Roxy Music,Various
 Roy Orbison,pop
 Roy Orbison,folk
 Roy Orbison,rock
 Roy Orbison,country
+Roy Orbison,Various
 Rush,rock
 Rush,heavy metal
 Sam Smith,pop
@@ -950,21 +1140,26 @@ Santana,blues
 Santana,rock
 Savage Garden,pop
 Savage Garden,rock
+Savage Garden,Various
 Scorpions,rock
 Scorpions,heavy metal
+Selah,Various
 Selah,rock
 Selah,christian
-Selah,inspirational – christian & gospel
 Selena Gomez,pop
 Sia,pop
 Sia,electronic
+Side A,Various
 Side A,rock
 Slayer,heavy metal
 Slayer,rock
+Slayer,Various
 Smiths,rock
+Smiths,Various
 Smiths,punk rock
 Smiths,electronic
-Snoop Dogg,hip hop
+Snoop Dogg,hip-hop
+Snoop Dogg,Various
 Soundgarden,heavy metal
 Soundgarden,rock
 Spandau Ballet,electronic
@@ -973,26 +1168,27 @@ Spandau Ballet,pop
 Spandau Ballet,rock
 Squeeze,rock
 Squeeze,pop
+Squeeze,Various
 Starship,pop
 Starship,rock
 Status Quo,blues
 Status Quo,rock
-Status Quo,pop
 Steely Dan,rock
 Steely Dan,country
 Steely Dan,folk
 Steely Dan,pop
-Steve Miller Band,rock
 Steve Miller Band,blues
 Steve Miller Band,country
 Steve Miller Band,folk
+Steve Miller Band,rock
 Steve Miller Band,pop
 Stevie Ray Vaughan,blues
 Stevie Ray Vaughan,rock
 Stevie Wonder,r&b and soul
-Stevie Wonder,r&b/soul
+Stevie Wonder,Various
 Sting,pop
 Sting,rock
+Sting,Various
 Stone Roses,pop
 Stone Roses,rock
 Stone Roses,electronic
@@ -1003,6 +1199,7 @@ Styx,folk
 Styx,pop
 Sublime,caribbean and caribbean-influenced
 Sublime,punk rock
+Sublime,Various
 Supertramp,rock
 Supertramp,folk
 Supertramp,pop
@@ -1010,36 +1207,42 @@ System Of A Down,heavy metal
 System Of A Down,rock
 Talking Heads,punk rock
 Talking Heads,rock
-Talking Heads,folk
+Talking Heads,Various
 Taylor Swift,pop
 Tears For Fears,pop
 Tears For Fears,rock
 Tears For Fears,electronic
+Tears For Fears,Various
 Ten Years After,rock
 Ten Years After,blues
 Ten Years After,country
 Ten Years After,folk
 The Beatles,rock
-The Beatles,rockabilly
+The Beatles,Various
 The Broadways,punk rock
+The Broadways,Various
 The Jam,rock
 The Jam,caribbean and caribbean-influenced
+The Jam,Various
 The Jam,pop
 The Jam,punk rock
 The Killers,rock
+The Killers,Various
 The Monkees,pop
 The Monkees,country
 The Monkees,folk
 The Monkees,rock
+The Monkees,Various
 The Script,pop
 The Script,rock
 The Temptations,r&b and soul
+The Temptations,Various
 The Temptations,pop
-The Temptations,r&b/soul
 The Weeknd,pop
 The Weeknd,r&b and soul
 The White Stripes,rock
 The White Stripes,blues
+The White Stripes,Various
 Thin Lizzy,blues
 Thin Lizzy,rock
 Thin Lizzy,heavy metal
@@ -1050,13 +1253,14 @@ Tim Buckley,country
 Tim Buckley,avant-garde
 Tim Buckley,folk
 Tim Buckley,pop
+Tim Buckley,Various
 Tim McGraw,country
 Tina Turner,electronic
 Tina Turner,r&b and soul
 Tina Turner,pop
 Tina Turner,rock
+Tom Jones,Various
 Tom Jones,rock
-Tom Jones,rockabilly
 Tom Lehrer,comedy
 Tom T. Hall,country
 Tom T. Hall,folk
@@ -1068,38 +1272,42 @@ Tool,rock
 Tori Amos,folk
 Tori Amos,rock
 Tori Amos,pop
+Tori Amos,Various
 Toto,rock
 Toto,pop
 Townes Van Zandt,country
 Townes Van Zandt,folk
 Townes Van Zandt,rock
+Townes Van Zandt,Various
 Tracy Chapman,folk
 Tracy Chapman,rock
+Tracy Chapman,Various
 Tragically Hip,rock
 Tragically Hip,indie
 Train,pop
 Train,rock
-Travis,hip hop
 Twenty One Pilots,rock
 U2,rock
+U2,Various
 UB40,caribbean and caribbean-influenced
 Ufo,blues
 Ufo,heavy metal
 Ufo,rock
 Ugly Kid Joe,heavy metal
 Ugly Kid Joe,rock
-Ultramagnetic Mc's,hip hop
+Ultramagnetic Mc's,hip-hop
 Ultramagnetic Mc's,electronic
-Ultramagnetic Mc's,hip-hop/rap
 Ultravox,rock
 Ultravox,pop
 Ultravox,electronic
+Ultravox,Various
 Uncle Kracker,country
 Uncle Kracker,rock
 Uncle Tupelo,country
 Uncle Tupelo,rock
 Uncle Tupelo,folk
 Uncle Tupelo,pop
+Uncle Tupelo,Various
 Underoath,heavy metal
 Underoath,punk rock
 Underoath,indie
@@ -1114,40 +1322,48 @@ Unwritten Law,rock
 Uriah Heep,rock
 Uriah Heep,blues
 Uriah Heep,heavy metal
-Used,punk rock
 Used,pop
+Used,punk rock
 Usher,pop
-Usher,hip hop
+Usher,hip-hop
 Usher,r&b and soul
-Utada Hikaru,east asian
+Usher,Various
+Utada Hikaru,world
 Utada Hikaru,electronic
 Utada Hikaru,pop
+Utada Hikaru,Various
 Utopia,rock
+Utopia,Various
 Van Der Graaf Generator,rock
 Van Der Graaf Generator,avant-garde
 Van Der Graaf Generator,jazz
 Van Der Graaf Generator,electronic
+Van Der Graaf Generator,Various
 Van Halen,rock
 Van Halen,heavy metal
 Van Morrison,folk
 Van Morrison,rock
 Van Morrison,pop
-Vanessa Williams,r&b/soul
-Vangelis,new age
+Vanessa Williams,Various
+Vanessa Williams,r&b and soul
+Vangelis,Various
+Vangelis,electronic
 Vanilla Ice,electronic
-Vanilla Ice,house
-Vanilla Ice,hip hop
+Vanilla Ice,hip-hop
 Velvet Underground,rock
 Velvet Underground,folk
+Velvet Underground,Various
 Vengaboys,electronic
 Vengaboys,pop
-Vera Lynn,jazz
+Vera Lynn,Various
 Vera Lynn,easy listening
 Vertical Horizon,rock
 Veruca Salt,rock
 Veruca Salt,pop
+Veruca Salt,Various
 Verve,rock
 Verve,pop
+Verve,Various
 Vince Gill,country
 Violent Femmes,rock
 Violent Femmes,punk rock
@@ -1170,79 +1386,89 @@ Warren Zevon,rock
 Warren Zevon,pop
 Waterboys,rock
 Waterboys,pop
+Waterboys,Various
 Waylon Jennings,country
 Ween,rock
-Ween,comedy
 Weezer,rock
 Weezer,pop
+Weezer,Various
 Weird Al Yankovic,comedy
 Weird Al Yankovic,pop
 Westlife,pop
+Westlife,Various
 Wet Wet Wet,pop
 Wet Wet Wet,rock
+Wet Wet Wet,Various
+Wham!,electronic
+Wham!,r&b and soul
 Wham!,pop
 Wham!,rock
 Whiskeytown,country
 Whiskeytown,folk
+Whiskeytown,Various
 Whiskeytown,rock
 Whitesnake,heavy metal
 Whitesnake,rock
 Whitesnake,blues
 Whitney Houston,pop
+Whitney Houston,Various
 Who,rock
 Who,folk
-Who,rockabilly
-Widespread Panic,blues
+Who,Various
 Widespread Panic,rock
-Will Smith,hip hop
+Widespread Panic,Various
+Will Smith,hip-hop
 Willie Nelson,country
 Willie Nelson,folk
 Willie Nelson,pop
 Wilson Phillips,rock
 Wilson Phillips,pop
+Wilson Phillips,Various
 Wilson Pickett,folk
 Wilson Pickett,rock
 Wilson Pickett,r&b and soul
+Wilson Pickett,Various
 Wilson Pickett,pop
-Wilson Pickett,r&b/soul
 Wishbone Ash,rock
 Wishbone Ash,blues
-Wishbone Ash,pop
 Within Temptation,heavy metal
-Wiz Khalifa,hip hop
+Wiz Khalifa,hip-hop
 Wiz Khalifa,electronic
 Wiz Khalifa,pop
-Wu-Tang Clan,hip hop
-Wyclef Jean,hip hop
-X-Raided,hip hop
+Wu-Tang Clan,hip-hop
+Wyclef Jean,hip-hop
+X-Raided,hip-hop
+X-Raided,Various
 X-Ray Spex,rock
 X-Ray Spex,punk rock
 X-Treme,electronic
-X Japan,east asian
-X Japan,electronic
-X Japan,pop
 X Japan,rock
 X Japan,heavy metal
 Xandria,heavy metal
+Xandria,Various
 Xavier Naidoo,pop
 Xavier Rudd,indie
 Xavier Rudd,caribbean and caribbean-influenced
 Xavier Rudd,rock
 Xentrix,heavy metal
 Xentrix,punk rock
-Xiu Xiu,rock
+Xentrix,Various
 Xiu Xiu,folk
+Xiu Xiu,rock
 Xiu Xiu,avant-garde
 Xiu Xiu,pop
 Xiu Xiu,indie
-Xscape,hip hop
+Xiu Xiu,Various
+Xscape,hip-hop
 Xscape,r&b and soul
 Xscape,pop
-Xscape,r&b/soul
+Xscape,Various
 XTC,rock
 XTC,punk rock
 XTC,pop
-Xzibit,hip hop
+XTC,Various
+Xzibit,hip-hop
+Xzibit,Various
 Xzibit,pop
 Yazoo,pop
 Yazoo,rock
@@ -1250,25 +1476,24 @@ Yazoo,electronic
 Yeah Yeah Yeahs,electronic
 Yeah Yeah Yeahs,rock
 Yeah Yeah Yeahs,pop
-Yelawolf,hip hop
+Yelawolf,hip-hop
 Yelawolf,pop
-Yello,electronic
-Yello,house
-Yello,hip hop
 Yellowcard,punk rock
 Yellowcard,pop
 Yellowcard,rock
+Yeng Constantino,Various
 Yes,rock
 Yes,jazz
-YG,hip hop
+YG,hip-hop
 YG,electronic
 YG,pop
 Ying Yang Twins,electronic
-Ying Yang Twins,hip hop
+Ying Yang Twins,hip-hop
 Ying Yang Twins,pop
 Yngwie Malmsteen,rock
 Yngwie Malmsteen,heavy metal
-Yo Gotti,hip hop
+Yngwie Malmsteen,Various
+Yo Gotti,hip-hop
 Yo Gotti,electronic
 Yo Gotti,pop
 Yo La Tengo,rock
@@ -1276,34 +1501,38 @@ Yo La Tengo,folk
 Yo La Tengo,pop
 Yo La Tengo,avant-garde
 Yo La Tengo,indie
+Yo La Tengo,Various
 Yoko Ono,avant-garde
 Yoko Ono,pop
 Yolanda Adams,r&b and soul
-Yolanda Adams,inspirational – christian & gospel
+Yolanda Adams,christian
 Yonder Mountain String Band,country
 Yonder Mountain String Band,folk
+Yonder Mountain String Band,Various
 You Am I,rock
 You Am I,indie
 Young Buck,electronic
-Young Buck,hip hop
+Young Buck,hip-hop
 Young Buck,pop
 Young Dro,electronic
-Young Dro,hip hop
+Young Dro,hip-hop
 Young Dro,pop
 Young Jeezy,electronic
-Young Jeezy,hip hop
+Young Jeezy,hip-hop
 Young Jeezy,pop
 Youngbloodz,electronic
-Youngbloodz,hip hop
+Youngbloodz,hip-hop
 Youngbloodz,pop
 Youth Of Today,heavy metal
 Youth Of Today,punk rock
 Youth Of Today,electronic
-Yukmouth,hip hop
+Youth Of Today,Various
+Yukmouth,hip-hop
 Yung Joc,electronic
-Yung Joc,hip hop
+Yung Joc,hip-hop
 Yung Joc,pop
-Z-Ro,hip hop
+Z-Ro,Various
+Z-Ro,hip-hop
 Zac Brown Band,country
 Zac Brown Band,rock
 Zakk Wylde,heavy metal
@@ -1314,16 +1543,17 @@ Zayn Malik,electronic
 Zayn Malik,pop
 Zazie,pop
 Zazie,rock
+Zazie,Various
 Zebrahead,heavy metal
 Zebrahead,pop
 Zebrahead,punk rock
 Zebrahead,rock
 Zero 7,electronic
-Zero 7,house
 Zero 7,jazz
 Zeromancer,electronic
 Zeromancer,heavy metal
 Zeromancer,rock
+Zeromancer,Various
 Ziggy Marley,caribbean and caribbean-influenced
 Zoegirl,rock
 Zoegirl,christian
@@ -1332,4 +1562,4 @@ Zucchero,pop
 ZZ Top,blues
 ZZ Top,country
 ZZ Top,rock
-ZZ Top,heavy metal
+,Various
