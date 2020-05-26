@@ -1,4 +1,4 @@
-pacman::p_load(dplyr, data.table, forcats, ggplot2, qdap, tm, udpipe, hunspell, tidytext, parallel, tictoc)
+pacman::p_load(dplyr, data.table, forcats, ggplot2, qdap, tm, udpipe, hunspell, tidytext, parallel, tictoc, tidyr)
 rm(list = ls())
 
 data = fread("Data-Challenge-Songlyrics/perfectly_matched_complete_dataset.csv")
@@ -154,38 +154,83 @@ df_SMOG$artist = gsub("\\|", ".", df_SMOG$artist)
 fwrite(df_SMOG, "Data-Challenge-Songlyrics/06_NLP_Research/songs_with_SMOG.csv")
 #df_new = fread("Data-Challenge-Songlyrics/06_NLP_Research/songs_with_SMOG.csv")
 
+data$songname = gsub("\\|", ".", data$songname)  
+data$artist = gsub("\\|", ".", data$artist)
+
+#------------------------------ get sentiment --------------------------------------------#
+
+get_sentiment_fun = function(df) {
+  
+  cores = parallel::detectCores() #schaut, wie viel Cores dein PC hat
+  cl = parallel::makePSOCKcluster(names = cores-1) #verwendet alle, bis auf einen Core und macht ein Cluster
+  clusterEvalQ(cl = cl, {c(library(tidyr), library(tidytext), library(dplyr))})
+  
+  nrc = tidytext::get_sentiments(lexicon = "nrc")
+  temp_df = tibble(artist = "0", songname = "0", trust = 0, fear = 0, negative = 0, sadness = 0, anger = 0,
+                    surprise = 0, positive = 0, disgust = 0, joy = 0, anticipation = 0)
+  for(i in 1:dim(df)[1]) {
+    temp_as = df[i] %>% select(artist, songname)
+    temp_text = df[i] %>% select(text_clean)
+    emotion_word = tibble(word = bag_o_words(temp_text)) %>% inner_join(nrc, by = "word")
+    emotion_word_count = emotion_word %>% count()
+    if(sjmisc::is_empty(emotion_word)){
+      done = temp_as
+    } else {
+      done = bind_cols(temp_as,
+                       pivot_wider(emotion_word %>% 
+                    group_by(sentiment) %>% 
+                    count() %>% 
+                    mutate(n = n/unlist(emotion_word_count)),
+                  names_from = sentiment, values_from = n))
+    }
+
+    temp_df = bind_rows(temp_df, done)
+  }
+  temp_df = temp_df %>% slice(-1)
+  parallel::stopCluster(cl)
+  return(temp_df)
+}
 
 
-#------------------------------ Tests und nicht mehr benötigtes --------------------------#
+sentiment_df = get_sentiment_fun(df = data) #unparallelisiert: 862.34 (~14 Minuten) Sekunden, parallelisiert ziemlich gleich - ist aber auch nicht optimiert
+
+# fwrite(sentiment_df, "Data-Challenge-Songlyrics/06_NLP_Research/songs_with_sentiment_percent.csv")
+
+#------------------------------ get sentiment summed --------------------------------------------#
+
+get_sentiment_sum = function(df) {
+  
+  cores = parallel::detectCores() #schaut, wie viel Cores dein PC hat
+  cl = parallel::makePSOCKcluster(names = cores-1) #verwendet alle, bis auf einen Core und macht ein Cluster
+  clusterEvalQ(cl = cl, {c(library(tidyr), library(tidytext), library(dplyr))})
+  
+  afinn = tidytext::get_sentiments(lexicon = "afinn")
+  sentiments = distinct(get_sentiments(lexicon = "loughran") %>% bind_rows(get_sentiments(lexicon = "bing")), word, .keep_all = T)
+  temp_df = tibble(artist = "0", songname = "0", negative = 0, neutral = 0, positive = 0)
+  for(i in 1:dim(df)[1]) {
+    temp_as = df[i] %>% select(artist, songname)
+    temp_text = df[i] %>% select(text_clean)
+    emotion_word = tibble(word = bag_o_words(temp_text)) %>% inner_join(afinn, by = "word") %>% left_join(sentiments, by = "word")
+    emotion_word[is.na(emotion_word$sentiment), 3] <- "neutral"
+    emotion_word[!(emotion_word$sentiment == "positive" | emotion_word$sentiment == "negative"), 3] <- "neutral"
+    emotion_word_count = emotion_word %>% group_by(sentiment) %>% summarise(n = sum(abs(value)))
+    if(sjmisc::is_empty(emotion_word)){
+      done = temp_as
+    } else {
+      done = bind_cols(temp_as,
+                       pivot_wider(emotion_word_count,
+                                   names_from = sentiment, values_from = n))
+    }
+    
+    temp_df = bind_rows(temp_df, done)
+  }
+  temp_df = temp_df %>% slice(-1)
+  parallel::stopCluster(cl)
+  return(temp_df)
+}
 
 tic()
-test2 = my_punctuation_fun_old(data_red, data_red$text)
+sentiment_sum_df = get_sentiment_sum(data) # hat 790 Sekunden gedauert (~13 Minuten)
 toc()
-
-my_punctuation_fun_old = function(df, text.var) {
-  text.var = str_replace_all(text.var, pattern = "I", replacement = "i")
-  temp1 = str_split(string = text.var, pattern = "\\s(?=[:upper:])|[\\?\\!\\.]")
-  temp1 = sapply(temp1, my_fun)
-  df = bind_cols(df, text_clean = temp1)
-  return(df)
-}
-
-
-
-gsub('([a-z])(?=[A-Z])','\\1,',data_red$text,perl=T)
-
-
-test[[8]] = removePunctuation(test[[8]])
-test[[8]] = test[[8]][!is.na(word_count(test[[8]]))]
-for(i in 2:length(test[[8]])) {
-  if(word_count(test[[8]][i])<2 & !is.na(test[[8]][i-1])) {
-        test[[8]][i-1] = txt_collapse(c(test[[8]][i-1],test[[8]][i]), collapse = " ")
-    test[[8]][i] = NA
-  } else if(word_count(test[[8]][i])<2 & is.na(test[[8]][i-1])){
-    test[[8]][i-2] = txt_collapse(c(test[[8]][i-2],test[[8]][i]), collapse = " ")
-    test[[8]][i] = NA
-  } else {next}
-}
-test[[8]] = test[[8]][!is.na(word_count(test[[8]]))]
-x = txt_collapse(test[[8]], collapse = ". ")
+# fwrite(sentiment_sum_df, "Data-Challenge-Songlyrics/06_NLP_Research/songs_with_sentiment_summed.csv")
 
