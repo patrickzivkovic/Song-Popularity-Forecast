@@ -64,7 +64,8 @@ data$text_clean = gsub("\\|", ".", data$text_clean)
 duplicates = data[duplicated(data %>% select("artist", "songname"))] %>% select(artist, songname)
 data = data %>% distinct_at(c("artist", "songname"), .keep_all = T) 
 
-tic()
+#--------------------------------- Coleman Liau ---------------------------------------#
+
   data$songname = gsub("\\.", "|", data$songname)
   data$artist = gsub("\\.", "|", data$artist)
   
@@ -77,8 +78,7 @@ tic()
     bottom = top+1
     top = top + 1000
   }  
-toc()
-tic()
+
 get_coleman_liau = function(temp_count) { 
   df_fin = tibble()
   cores = parallel::detectCores() #schaut, wie viel Cores dein PC hat
@@ -107,8 +107,53 @@ toc()
 df_new$songname = gsub("\\|", ".", df_new$songname)  
 df_new$artist = gsub("\\|", ".", df_new$artist)
 #fwrite(df_new, "Data-Challenge-Songlyrics/06_NLP_Research/songs_with_colemanlieau.csv")
-#df_new = fread("Data-Challenge-Songlyrics/06_NLP_Research/songs_with_colemanlieau.csv")
+# df_new = fread("Data-Challenge-Songlyrics/06_NLP_Research/songs_with_colemanlieau.csv")
   
+#------------------------------------ SMOG Index -----------------------------------------#
+
+#vorbereiten der Daten
+data$songname = gsub("\\.", "|", data$songname)
+data$artist = gsub("\\.", "|", data$artist)
+#initialisieren der Datenerstellung
+temp_count = ceiling(dim(data)[1]/1000)
+bottom = 1
+top = 1000
+
+#erstellen der kleineren Files
+for(i in seq(1,temp_count,1)) { 
+  assign(paste0("temp",i), data %>% select(artist, songname, text_clean) %>% slice(bottom:top, .preserve = T))
+  bottom = top+1
+  top = top + 1000
+}
+
+get_SMOG = function(temp_count) {
+  df_fin = tibble()
+  cores = parallel::detectCores() #schaut, wie viel Cores dein PC hat
+  cl = parallel::makePSOCKcluster(names = cores-1) #verwendet alle, bis auf einen Core und macht ein Cluster
+  clusterEvalQ(cl = cl, {c(library(qdap), library(dplyr))})
+  for(j in paste0("temp", seq(1, temp_count, 1))){
+    assign(j, sentSplit(get(j), "text_clean") %>% select(artist, songname, text_clean))
+    assign(j, scores(with(get(j), SMOG(text_clean, list(artist, songname), output = "all"))))
+    
+    df_fin = bind_rows(df_fin, 
+                       colsplit2df(get(j), splitcols = "artist&songname", keep.orig = F) 
+                       %>% select(artist, songname, SMOG)) 
+    print(paste0("Finished processing ", j))                     
+    rm(list=eval(j))
+    gc()
+  }
+  parallel::stopCluster(cl)
+  return(df_fin)
+}
+tic()
+df_SMOG = get_SMOG(temp_count) #hat 4626 Sekunden gebraucht (~1h 17 Minuten)
+toc()
+
+df_SMOG$songname = gsub("\\|", ".", df_SMOG$songname)  
+df_SMOG$artist = gsub("\\|", ".", df_SMOG$artist)
+fwrite(df_SMOG, "Data-Challenge-Songlyrics/06_NLP_Research/songs_with_SMOG.csv")
+#df_new = fread("Data-Challenge-Songlyrics/06_NLP_Research/songs_with_SMOG.csv")
+
 
 
 #------------------------------ Tests und nicht mehr benötigtes --------------------------#
