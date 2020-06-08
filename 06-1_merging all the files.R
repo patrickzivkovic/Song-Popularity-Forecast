@@ -1,4 +1,4 @@
-pacman::p_load(dplyr, data.table)
+pacman::p_load(dplyr, data.table, tidyverse, magrittr)
 rm(list = ls())
 
 orig = fread("Data-Challenge-Songlyrics/perfectly_matched_complete_dataset.csv") %>% select(-text, -artist_genre, -song_id, -artist_id, -original_songname)
@@ -25,4 +25,13 @@ merged = orig %>% left_join(genres_top1, by = "artist") %>%
   full_join(df3, by = c("artist", "songname")) %>%
   full_join(df4, by = c("artist", "songname"))
 
-fwrite(merged, "Data-Challenge-Songlyrics/merged_dataset.csv")
+#Replace all NAs in the sentiment columns with zeroes
+merged <- fread("merged_dataset.csv")
+sum(is.na(merged))
+merged %<>% mutate_at(c(11:23), ~replace(., is.na(.), 0))
+sum(is.na(merged))
+#There are still some rows left with NAs - we remove these rows to prevent calculation difficulties
+merged %<>% drop_na()
+sum(is.na(merged))
+
+fwrite(merged, "merged_dataset.csv")
