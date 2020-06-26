@@ -1,0 +1,16 @@
+Commitment für Präsi:
+
+- Vorstellen original Datensatz (Patrick)
+- Ursprüngliche Idee: Lyrics verwenden, um Popularität von Songs vorhersagen 
+- Idee kombinieren mit Spotify (Michi)
+  - was haben wir extrahiert?
+  - merging mit Genre
+- Datenverlust, was ist passiert? (Patrick)
+- Vorstellen herangehensweise an NLP (bag_o_words, etc.) (readability: Michi, sentiments: Patrick)
+- Einigung, wie wir sentiments, readability-indices, etc. gemacht haben
+hier: neue Deskriptives vorstellen (Genre, Streuung z.B. Erscheinungsjahr, Popularitätsschnitt, etc.) (Patrick)
+- Modelling: Vorstellung Baseline-Modell, GLM, NN in Keras, h2o - GBM, RF, Auto_ML, Stacked Ensembles
+hier: Performance unserer Modelle; Abweichungen der Predictions plotten, etc. (Michi)
+
+
+Tabelle aufsetzen, wo wir alle Modelle vergleichen (Patrick setzt auf, Michi ergänzt)

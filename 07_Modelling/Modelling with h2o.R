@@ -93,9 +93,9 @@ h2o.performance(gbm_2, newdata = test)
 
 predictions = h2o.predict(gbm_1, newdata = test)
 test$predicted = predictions
-h2o.shutdown()
+# h2o.shutdown()
 
-test_df2 = test_df %>% select(popularity, predicted)
+#test_df2 = test_df %>% select(popularity, predicted)
 
 #--------------------------------------------------------------------------------------------------------#
 # Auto-ML kreiirt viele Modelle (hier: hauptsächlich GBM, paar GLM und deep learning) und vereint sie zu einem Stacked Ensemble
@@ -111,3 +111,23 @@ h2o.saveModel(auto_ml, path = "Data-Challenge-Songlyrics/07_Modelling/models/aut
 h2o.saveModel(auto_ml2, path = "Data-Challenge-Songlyrics/07_Modelling/models/auto_ml_best_of_family")
 
 h2o.removeAll(retained_elements = c(test, valid, train, data.h2o))
+
+
+name_rf1 = list.files("Data-Challenge-Songlyrics/07_Modelling/models/randomForest_1")
+name_rf2 = list.files("Data-Challenge-Songlyrics/07_Modelling/models/randomForest_2")
+name_gbm1 = list.files("Data-Challenge-Songlyrics/07_Modelling/models/GBM_1")
+name_gbm2 = list.files("Data-Challenge-Songlyrics/07_Modelling/models/GBM_2")
+name_ml_bof = list.files("Data-Challenge-Songlyrics/07_Modelling/models/auto_ml_best_of_family")
+name_ml = list.files("Data-Challenge-Songlyrics/07_Modelling/models/auto_ml")
+
+rf_1 = h2o.loadModel(paste0("Data-Challenge-Songlyrics/07_Modelling/models/randomForest_1/", name_rf1))
+rf_2 = h2o.loadModel(paste0("Data-Challenge-Songlyrics/07_Modelling/models/randomForest_2/", name_rf2))
+gbm_1 = h2o.loadModel(paste0("Data-Challenge-Songlyrics/07_Modelling/models/GBM_1/", name_gbm1))
+gbm_2 = h2o.loadModel(paste0("Data-Challenge-Songlyrics/07_Modelling/models/GBM_2/", name_gbm2))
+auto_ml_bof = h2o.loadModel(paste0("Data-Challenge-Songlyrics/07_Modelling/models/auto_ml_best_of_family/", name_ml_bof))
+auto_ml = h2o.loadModel(paste0("Data-Challenge-Songlyrics/07_Modelling/models/auto_ml/", name_ml))
+
+h2o.performance(auto_ml_bof, newdata = test)
+h2o.performance(auto_ml, newdata = test)
+
+h2o.shutdown()
