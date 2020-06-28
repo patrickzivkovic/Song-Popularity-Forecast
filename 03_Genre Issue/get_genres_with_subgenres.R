@@ -1,19 +1,62 @@
 pacman::p_load(data.table, dplyr, stringi, stringr, spotifyr, lubridate, knitr, cld3, quanteda, tm, rlang, stringdist, rvest, purrr, tidyverse, janitor, qdap)
 rm(list = ls())
 
+#--------------------------------------- von Wikipedia ----------------------------------------------------------------#
+
+url <- "https://en.wikipedia.org/wiki/List_of_popular_music_genres" 
+
+webpage <- read_html(url, encoding = "UTF-8")
+html_nodes(webpage, "[class='mw-headline']")[2:28] %>% html_text()
+html_nodes(webpage, "h3")
+html_nodes(webpage, "[class='div-col columns column-width']>ul") %>% html_attr("title")
+html_nodes(webpage, "[class='toctext']") %>% html_text()
+html_nodes(webpage, "div>ul>li>a") %>% html_attr("title")
+html_nodes(webpage, "h4>span") %>% html_attr("id")
+html_nodes(webpage, "h2>span") %>% html_attr("id")
+
+overgenres = (html_nodes(webpage, "div") %>% html_nodes("[class='toctext']") %>% html_text())[3:25]
+subgenres = (html_nodes(webpage, "div") %>% html_nodes("ul>li>a") %>% html_text())[112:986]
+
+boundaries = c("Zouglou", "Sawt", "Trot", "Sufi rock", "V-pop", "Electroacoustic", "West Coast blues", "Zouk", "Parody", "Zydeco",
+               "New-age music", "Nightcore", "Witch house", "Cantes de ida y vuelta", "Western music", "Horrorcore", "West Coast jazz",
+               "Vallenato", "Worldbeat", "Southern soul", "Wrock", "Groove metal", "Street punk")
+
+sapply(subgenres, grep)
+bound_in_df = NULL
+compare = 0
+for(i in 1:length(boundaries)) {
+  object = grep(boundaries[i], subgenres)
+  decision = object[compare < object][1]
+  compare = object
+  bound_in_df[i] = decision
+}
+
+bound_in_df2 = c(0, bound_in_df)
+to_rep = NULL
+for(i in 1:length(bound_in_df2)-1) {
+  to_rep[i] = bound_in_df2[i+1]-bound_in_df2[i]
+}
+
+overgenre_table = tibble(subgenre = subgenres, overgenre = rep(overgenres, to_rep))
+
+fwrite(overgenre_table, "overgenres_from_wikipedia.csv")
+
+
+#----------------------------------------- von musicgenrelist -----------------------------------------------------#
+
+
 url <- "https://www.musicgenreslist.com/" 
 
-webpage <- read_html(url)
+webpage <- read_html(url, encoding = "UTF-8")
 
 
 
 genres_with_subgenres = html_nodes(webpage, "div>ul>li") %>% map_df(~
-                                                                  data_frame(
-                                                                    overgenre = html_nodes(.x, "a") %>% html_text(trim = T), 
-                                                                    subgenre = list(html_nodes(.x, "ul>li") %>% html_text(trim = T))
-                                                                  ))
+                                                                      data_frame(
+                                                                        overgenre = html_nodes(.x, "a")  %>% html_text(trim = T), 
+                                                                        subgenre = list(html_nodes(.x, "ul>li")  %>% html_text(trim = T))
+                                                                      ))
 
-html_nodes(webpage, "div>ul>li")
 
 genres_with_subgenre = genres_with_subgenres[lapply(genres_with_subgenres$subgenre, length)>0,] %>% filter()
 
