@@ -5,8 +5,9 @@ pacman::p_load(dplyr, data.table, tidyverse, magrittr, ggplot2, leaps, corrplot,
 
 data <- fread("merged_dataset.csv")
 
+data$genre <- as.numeric(factor(data$genre))
 #Prepare data
-data %<>% select(-artist,-songname,-duration_ms,-genre)
+data %<>% select(-artist,-songname,-duration_ms)
 #To check how only readability and sentiment variables perform
 #data %<>% select(-artist,-songname,-duration_ms,-genre, -artist_popularity, -year, -duration_s)
 
@@ -58,7 +59,7 @@ get_cv_error <- function(model.formula, data){
   train.control <- trainControl(method = "cv", number = 10)
   cv <- train(model.formula, data = data, method = "lm",
               trControl = train.control)
-  cv$results$RMSE
+  cv$results$MAE
 }
 
 # Check the average error rate for every single variable configuration of the calculated forward model
@@ -67,6 +68,8 @@ cv.errors <- map(model.ids, get_model_formula, forward_model, "popularity") %>%
   map(get_cv_error, data = data) %>%
   unlist()
 cv.errors
+mean(cv.errors)
+sd(cv.errors)
 
 # Remind ourselves in which boundary the most popularity score are populated
 summary(data$popularity)
