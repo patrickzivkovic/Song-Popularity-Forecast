@@ -19,13 +19,15 @@ ggcorrplot::ggcorrplot(cor(data), method = "circle", type = "lower")
 
 #Forward model 
 forward_model <- regsubsets(data=data, popularity ~ .,
-                            method = "forward", nvmax = dim(data)[2])
+                            method = "forward", nvmax = length(data))
 summary(forward_model)
 par(mfrow=c(1,3))
 plot(forward_model, scale = c('bic'))
 plot(forward_model, scale = c('adjr2'))
 plot(forward_model, scale = c('Cp'))
 par(mfrow=c(1,1))
+
+plot(forward_model, scale = c('adjr2'))
 
 
 metrics <- summary(forward_model)
