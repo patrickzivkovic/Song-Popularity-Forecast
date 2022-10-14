@@ -2,8 +2,7 @@ pacman::p_load(data.table, dplyr, stringi, stringr, spotifyr, lubridate, knitr, 
 
 rm(list = ls())
 
-Sys.setenv(SPOTIFY_CLIENT_ID = '70318fd33b4b4a2c82f52223f00c8a9e') #Setzt die Spotify_Client_ID
-Sys.setenv(SPOTIFY_CLIENT_SECRET = '93f79360b69348dbbc9adb64c10bd6be') #Setzt das Spotify_client_secret
+#insert keys here
 access_token <- get_spotify_access_token() #kreeirt den Zugangstoken für Spotifyr
 
 #--------------------------------------- Vorbereiten der Daten --------------------------------------#
