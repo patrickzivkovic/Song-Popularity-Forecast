@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+<<setup, include=FALSE, cache=FALSE>>=
+pacman::p_load(knitr, stringr, doBy, reshape2, xtable, tidyr, ggplot2, data.table, dplyr, pander,stringi,kableExtra)
+# set global chunk options
+opts_chunk$set(fig.path='figure/graphic-', fig.align='center', fig.pos='!ht', echo=FALSE, warning=FALSE,message=FALSE)
+knitr::opts_knit$set(root.dir = "../")
+@
+
+\vspace{-5cm}
+\title{\vspace{-4cm}Data Loss - Songlyrics}
+\author{Patrick Zivkovic}
+
+\maketitle
+
+\section*{Not all albums were considered}
+
+Due to the limit = 50 parameter of the get-artist-album function we did not extract all albums. With the offset parameter we were able to correct this and produce about 2500 more matches, thus increasing the size of our dataset from 34116 to 36932. (originally 57650 songs - so we are working with about 64\% of the full dataset).
+
+\section*{Matching: Stringdist = 2}
+
+<<>>=
+corr <- fread("data/stringdist_correction.csv")
+@
+
+Had to make a correction on \Sexpr{dim(corr)[1]} titles. Mostly they were just punctuation errors as the following example shows. \\
+
+<<>>=
+corr %>%
+  slice(1:5) -> corr_example
+kable(corr_example)
+@
+
+\section*{Problems with appendages}
+
+Most songs were lost to us because the song was only available in Spotify with an appendage such as "Live", "Outtake", "Single" or something similar. \\
+For example, the song "Love Isn't Easy" by Abba appears in this form in the original record, but in Spotify only as follows:
+
+<<>>=
+#Was not extracted because of the appendage
+all_tracks_spotify <- fread("data/all_tracks_from_spotify.csv")
+all_tracks_spotify %>%
+  filter(artist == "ABBA") %>%
+  select(name) %>%
+  pull(name) -> abba_songs
+abba_songs[str_detect(abba_songs,"Love Isn't Easy")][1]
+@
+
+Another example is the Beatles' song "All I've Got To Do".
+
+<<>>=
+all_tracks_spotify %>%
+  filter(artist == "The Beatles")%>%
+  select(name) %>%
+  pull(name) -> beatles_songs
+beatles_songs[str_detect(beatles_songs, "All I've Got To Do")]
+@
+
+\section*{Availability}
+
+The rest of the songs were not matched because they are actually not available in the Spotify database.
+For example, some songs from ABBA ("Burning My Bridges" or "Dream World").
+
+
+\end{document}
